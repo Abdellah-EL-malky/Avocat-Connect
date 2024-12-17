@@ -42,3 +42,48 @@
             </button>
           </div>
         </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-1.2.1&auto=format&fit=crop&w=400" alt="Avocat">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-900">Me. Thomas Dubois</h3>
+            <p class="text-gray-600">Droit immobilier</p>
+            <p class="mt-2 text-gray-500">20 ans d'expérience</p>
+            <button onclick="showReservationForm('Thomas Dubois')" class="mt-4 w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
+              Réserver
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="reservationForm" class="hidden bg-white shadow-lg rounded-lg p-6 max-w-2xl mx-auto">
+        <h3 class="text-2xl font-bold mb-6">Formulaire de Réservation</h3>
+        <form class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Avocat sélectionné</label>
+            <input type="text" id="selectedLawyer" readonly class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Date</label>
+            <input type="date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Heure</label>
+            <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+              <option>09:00</option>
+              <option>10:00</option>
+              <option>11:00</option>
+              <option>14:00</option>
+              <option>15:00</option>
+              <option>16:00</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Motif de la consultation</label>
+            <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" rows="3"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
+            Confirmer la réservation
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
