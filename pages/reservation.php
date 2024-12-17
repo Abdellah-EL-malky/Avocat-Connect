@@ -9,7 +9,7 @@
 </head>
 <body class="bg-gray-50">
     <script src="https://cdn.tailwindcss.com"></script>
-  <nav class="bbg-slate-800 text-white">
+  <nav class="bg-slate-800 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
@@ -87,3 +87,32 @@
       </div>
     </div>
   </div>
+    <footer class="bg-slate-800 text-white mt-12">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact</h3>
+          <p>123 Avenue des Avocats</p>
+          <p>75000 Paris</p>
+          <p>Tél: 01 23 45 67 89</p>
+          <p>Email: contact@cabinet-legal.fr</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Horaires</h3>
+          <p>Lundi - Vendredi: 9h - 18h</p>
+          <p>Samedi: Sur rendez-vous</p>
+          <p>Dimanche: Fermé</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Liens utiles</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-gray-300">Mentions légales</a></li>
+            <li><a href="#" class="hover:text-gray-300">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script></script>
+</body>
+</html>
