@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avocat Connect - Inscription</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
-  <nav class="bg-slate-800 text-white">
+  <nav class="bg-gray-900 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
@@ -25,7 +25,8 @@
       </div>
     </div>
   </nav>
-<div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+
+  <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
     <div class="max-w-md w-full space-y-8">
       <div>
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -60,6 +61,5 @@
       </form>
     </div>
   </div>
-  <script src="../assets/js/script.js"></script>
 </body>
 </html>

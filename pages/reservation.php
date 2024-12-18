@@ -4,12 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avocat Connect - Réservation</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
-    <script src="https://cdn.tailwindcss.com"></script>
-  <nav class="bg-slate-800 text-white">
+  <nav class="bg-gray-900 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
@@ -26,7 +25,8 @@
       </div>
     </div>
   </nav>
-<div class="bg-white py-12">
+
+  <div class="bg-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Réserver une Consultation</h2>
       
@@ -42,6 +42,7 @@
             </button>
           </div>
         </div>
+
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
           <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-1.2.1&auto=format&fit=crop&w=400" alt="Avocat">
           <div class="p-6">
@@ -54,6 +55,7 @@
           </div>
         </div>
       </div>
+
       <div id="reservationForm" class="hidden bg-white shadow-lg rounded-lg p-6 max-w-2xl mx-auto">
         <h3 class="text-2xl font-bold mb-6">Formulaire de Réservation</h3>
         <form class="space-y-4">
@@ -87,7 +89,8 @@
       </div>
     </div>
   </div>
-    <footer class="bg-slate-800 text-white mt-12">
+
+  <footer class="bg-gray-900 text-white mt-12">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
@@ -113,6 +116,12 @@
       </div>
     </div>
   </footer>
-  <script src="../assets/js/script.js"></script>
+
+  <script>
+    function showReservationForm(lawyerName) {
+      document.getElementById('reservationForm').classList.remove('hidden');
+      document.getElementById('selectedLawyer').value = 'Me. ' + lawyerName;
+    }
+  </script>
 </body>
 </html>
